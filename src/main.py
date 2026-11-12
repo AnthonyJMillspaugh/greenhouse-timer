@@ -5,7 +5,6 @@ import time
 from datetime import datetime, time as dtime
 from zoneinfo import ZoneInfo
 
-# TODO: make these variables that can be changed
 tz = ZoneInfo('America/Los_Angeles')
 POLL_RATE = 1
 
@@ -15,6 +14,7 @@ logging.basicConfig(
     format='%(asctime)s - %(message)s',
 )
 
+# TODO: make these variables that can be changed
 class TimeMarker:
     def __init__(self, time: dtime, start: bool):
         self.time = time
